@@ -11,3 +11,5 @@
 
 # 
 
+* Concept Review of a Cloud-Based Smart Battery Management System for Lithium-Ion Batteries: Feasibility, Logistics, and Functionality https://doi.org/10.3390%2Fbatteries8020019
+
