@@ -13,3 +13,4 @@
 
 * Concept Review of a Cloud-Based Smart Battery Management System for Lithium-Ion Batteries: Feasibility, Logistics, and Functionality https://doi.org/10.3390%2Fbatteries8020019
 * Predicting the state of charge and health of batteries using data-driven machine learning https://doi.org/10.1038/s42256-020-0156-7
+* Distributed Learning Applications in Power Systems: A Review of Methods, Gaps, and Challenges https://doi.org/10.3390/en14123654
