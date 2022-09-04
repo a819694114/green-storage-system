@@ -9,7 +9,7 @@
 * A Comprehensive Review of Available Battery Datasets, RUL Prediction Approaches, and Advanced Battery Management | https://doi.org/10.1109/ACCESS.2021.3089032
 * Lithium-ion battery data and where to find it | https://doi.org/10.1016/j.egyai.2021.100081
 
-# 
+# Sep. 2022
 
 * Concept Review of a Cloud-Based Smart Battery Management System for Lithium-Ion Batteries: Feasibility, Logistics, and Functionality https://doi.org/10.3390%2Fbatteries8020019
 * Predicting the state of charge and health of batteries using data-driven machine learning https://doi.org/10.1038/s42256-020-0156-7
