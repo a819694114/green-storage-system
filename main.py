@@ -6,10 +6,25 @@ from chart_studio import plotly
 global battery_df
 global battery_columns
 
-# Sidebar expanded by default
-sl.set_page_config(layout='wide', initial_sidebar_state='expanded')
+### --- Sidebar
+sl.set_page_config(layout='wide', initial_sidebar_state='expanded') 
 
 sl.sidebar.header('Dashboard `version 2`')
+
+## --- Tabs
+tab_headings = [
+    "Data Analysis",
+    "Prediction"
+]
+
+tabs = sl.tabs(tab_headings)
+
+with tabs[0]:
+    sl.markdown("Data Analysis")
+
+with tabs[1]:
+    sl.markdown("Prediction Dashboard")
+
 
 ### --- FILE UPLOAD
 client_file = sl.sidebar.file_uploader(
@@ -48,6 +63,22 @@ if chart_type == 'Scatterplots':
         plot = px.scatter(data_frame=battery_df, x=x_values, y=y_values)
 
         # display graph
+        sl.markdown('### Capacity Degradation for discharge cycles')
         sl.plotly_chart(plot)
+
+        ### --- Row A: Metrics
+        sl.markdown('### Metrics')
+        c1, c2, c3 = sl.columns(3)
+        c1.metric("Total Cycles", 166)
+        c2.metric("Total Cycles", 166)
+        c3.metric("Total Cycles", 166)
+
+
+        ### -- Row C: Line graph
+        sl.markdown('### Line chart')
+        sl.line_chart(battery_df, x="cycle", y="capacity")
+
     except Exception as e:
         print(e)
+
+
