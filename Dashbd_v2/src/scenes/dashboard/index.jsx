@@ -4,7 +4,6 @@ import { mockTransactions } from "../../data/mockData";
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
 import Header from "../../components/Header";
 import LineChart from "../../components/LineChart";
-import GeographyChart from "../../components/GeographyChart";
 import BarChart from "../../components/BarChart";
 import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
@@ -57,7 +56,7 @@ const Dashboard = () => {
           <StatBox
             title={`${(data.condition)*100} ${'%'}`}
             subtitle="State of Health(SoH)"
-            progress={data.conditionstr}
+            progress={data.condition}
           />
           ))}
         </Box>
@@ -73,7 +72,7 @@ const Dashboard = () => {
           <StatBox
             title={`${(data.eval)*100} ${'%'}`}
             subtitle="State of Charge(SoC)"
-            progress={data.evalstr}
+            progress={data.eval}
           />
           ))}
         </Box>
@@ -132,7 +131,7 @@ const Dashboard = () => {
           </Box>
           <Box height="250px" m="-20px 0 0 0">
             <LineChart isDashboard={true} />
-            {/* <img src={lstm} width="100px" height="250px" alt="lstm plot" /> */}
+            {/* <img src={lstm} width="100px" height="250px" alt="lstm plot" /> */} 
           </Box>
         </Box>
         <Box
