@@ -22,18 +22,7 @@ const Dashboard = () => {
         <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
 
         <Box>
-          <Button
-            sx={{
-              backgroundColor: colors.blueAccent[700],
-              color: colors.grey[100],
-              fontSize: "14px",
-              fontWeight: "bold",
-              padding: "10px 20px",
-            }}
-          >
-            <DownloadOutlinedIcon sx={{ mr: "10px" }} />
-            Download Reports
-          </Button>
+          
         </Box>
       </Box>
 
@@ -129,9 +118,9 @@ const Dashboard = () => {
               </IconButton>
             </Box>
           </Box>
-          <Box height="250px" m="-20px 0 0 0">
-            <LineChart isDashboard={true} />
-            {/* <img src={lstm} width="100px" height="250px" alt="lstm plot" /> */} 
+          <Box height="250px" m="25px 0 20px 30px">
+            {/* <LineChart isDashboard={true} /> */}
+            <img src={lstm} width="700px" height="250px" alt="lstm plot" /> 
           </Box>
         </Box>
         <Box

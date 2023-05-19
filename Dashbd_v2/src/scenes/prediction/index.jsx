@@ -35,7 +35,7 @@ const Prediction = () => {
     <Box m="20px">
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
-        <Header title="Prediction" subtitle="Battery Evaluation and Comparison with AI" />
+        <Header title="Health Prediction" subtitle="Battery Evaluation and Comparison with AI" />
 
         
       </Box>
